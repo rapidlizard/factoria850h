@@ -1,0 +1,16 @@
+/* Reset */
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(/home/lizard/Desktop/factoria850h/1stWebReplication/images/background_header.jpg);
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:after, *:before {
+    box-sizing: inherit;
+}
+
+/* Typography */
