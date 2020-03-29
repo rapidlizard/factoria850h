@@ -2,7 +2,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-image: url(/home/lizard/Desktop/factoria850h/1stWebReplication/images/background_header.jpg);
+    font-family: 'Open Sans', sans-serif;
 }
 
 html {
@@ -14,3 +14,254 @@ html {
 }
 
 /* Typography */
+
+h1 {
+    font-size: 44px;
+}
+
+h3 {
+    font-size: 24px;
+    color: #333333;
+}
+
+p {
+    font-weight: 300;
+    color: #555555;
+    font-size: 18px;
+}
+
+.headerTitle p {
+    font-size: 28px;
+    font-weight: 600;
+    color: white;
+}
+
+.headerTitle h1 {
+    color: white;
+}
+
+/* Layout */
+
+.container {
+    max-width: 1550px;
+    margin: 0 auto;
+}
+
+.siteHeader {
+    background-image: url('../images/Background image_edited.png');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.headerNav {
+    height: 100px;
+    padding-top: 60px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.siteHeader hr {
+    background-color: white;
+    height: 1px;
+    width: 100%;
+    margin: 0;
+}
+
+.headerTitle {
+    padding-top: 150px;
+    padding-bottom: 200px;
+
+}
+
+.strip {
+    background-color: #ececec;
+    padding: 35px 300px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.strip p {
+    font-size: 24px;
+    font-weight: 700;
+    color: #777777;
+    margin: 0;
+    margin-top: 15px;
+}
+
+footer {
+    background-color: #d4d3d3;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.lastCTA {
+    width: 250px;
+    margin: 75px auto;
+}
+
+/* Components */
+
+.logo {
+    width: auto;
+    height: 40px;
+}
+
+.cta {
+    width: 250px;
+    height: 65px;
+    background-image: linear-gradient(to right, #F76B1C, #FAD961);
+    border-radius: 40px;
+    border: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    transition: 0.4s;
+}
+
+.cta:hover {
+    border: 3px solid #F76B1C;
+    color: #555555;
+    background-image: linear-gradient(to right, white, white);
+}
+
+nav a {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 24px;
+    color: white;
+    margin: 0 10px;
+    transition: 0.4s;
+}
+
+nav a:hover {
+    color: #F76B1C;
+}
+
+/*- three points -*/
+
+.threePoints {
+    padding-top: 100px;
+    display: flex;
+    max-width: 1500px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.smallCard {
+    max-width: 450px;
+}
+
+.smallCard header{
+    display: flex;
+    max-width: 300px;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.smallCardHeaderContents {
+    display: flex;
+}
+
+.smallCard h3 {
+    margin-left: 20px;
+    text-align: center;
+}
+
+.smallCardIcon {
+    width: 50px;
+    height: 55px;
+}
+
+.iconDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.smallCard p {
+    margin: 0;
+    text-align: center;
+    font-weight: 600;
+    line-height: 30px;
+}
+
+/*- testimony -*/
+
+.testimony {
+    margin-top: 150px;
+}
+
+.testimonyCard {
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 20px;
+    -webkit-box-shadow: 0px 1px 15px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 1px 15px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 1px 15px 0px rgba(0,0,0,0.75);
+}
+
+.testimonyCard h3{
+    margin: 0;
+    padding: 25px 0;
+    text-align: center;
+    font-weight: 500;
+}
+
+.testimonyCard hr{
+    margin: 0 auto;
+    width: 50px;
+    height: 7px;
+    border-radius: 5px;
+    background-color: #005C97;
+}
+
+.quote {
+    max-width: 80%;
+    display: flex;
+    margin: 40px auto;
+    justify-content: space-between;
+}
+
+.quote img {
+    width: 40px;
+    height: 40px;
+    margin-top: 10px;
+}
+
+.quote p {
+    max-width: 90%;
+    margin: 0;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 35px;
+}
+
+.testimony footer {
+    display: flex;
+    max-width: 75%;
+    margin: 40px auto 0;
+    padding-bottom: 40px;
+    background-color: transparent;
+}
+
+.testimony footer p {
+    font-weight: 600;
+}
+
+.testimony footer i {
+    text-decoration: none;
+    font-weight: 400;
+    color: #555555;
+}
+
+
+.profilePic {
+    height: 75px;
+    width: 75px;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+
