@@ -1,0 +1,117 @@
+.catagories {
+    background-color: $base-color-light;
+
+    h2 {
+        @include mobile-container;
+        margin: 0;
+        text-align: center;
+        padding: 40px 0;
+        color: $base-color-dark;
+        letter-spacing: 2px;
+    }
+
+    h3 {
+        margin: 0;
+        letter-spacing: 2px;
+    }
+
+    .tiles {
+        display: flex;
+        flex-direction: column;
+
+        .tile {
+            text-align: center;
+            color: $base-color-light;
+            margin: 0;
+            height: 300px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+
+    .bathroom {
+        background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url('../images/images/bathroom.jpg');
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        transition: 0.2s;
+
+        &:hover {
+            background: linear-gradient( rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0) ), url('../images/images/bathroom.jpg');
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+            color: transparent;
+        }
+    }
+
+    .kitchen {
+        background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url('../images/images/kitchen.jpg');
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        transition: 0.2s;
+
+        &:hover {
+            background: linear-gradient( rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0) ), url('../images/images/kitchen.jpg');
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+            color: transparent;
+        }
+    }
+
+    .bedroom {
+        background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url('../images/images/bedroom.jpg');
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        transition: 0.2s;
+
+        &:hover {
+            background: linear-gradient( rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0) ), url('../images/images/bedroom.jpg');
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+            color: transparent;
+        }
+    }
+
+    .living-room {
+        background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url('../images/images/livingroom.jpg');
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        transition: 0.2s;
+
+        &:hover {
+            background: linear-gradient( rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0) ), url('../images/images/livingroom.jpg');
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+            color: transparent;
+        }
+    }
+}
+
+@media (min-width: 860px) {
+    .catagories {
+        h2 {
+            font-size: 40px;
+            text-align: start;
+            @include desktop-container;
+            padding: 50px 10px;
+        }
+
+        .tiles {
+            flex-direction: row;
+            
+            .tile {
+                width: 33%;
+                height: 700px;
+            }
+        }
+    }
+}

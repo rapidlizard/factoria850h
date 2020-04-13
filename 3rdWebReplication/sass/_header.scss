@@ -1,0 +1,181 @@
+
+.header {
+  width: 100%;
+  z-index: 3;
+  color: $base-color-dark;
+  background-color: $base-color-light;
+  
+  .header-top {
+    @include mobile-container;
+    padding-top: 10px;
+  }
+
+  ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      overflow: hidden;
+      background-color: transparent;
+  }
+    
+  li {
+
+    a {
+      display: block;
+      padding: 20px 20px;
+      text-decoration: none;
+      color: $base-color-dark;
+      font-weight: 600;
+      letter-spacing: 2px;
+    }
+      a:hover, .menu-btn:hover {
+      color: #777777;
+    }
+  }
+    
+  .logo {
+      display: block;
+      float: left;
+      width: 110px;
+      height: auto;
+  }
+    
+  .menu {
+      clear: both;
+      max-height: 0;
+      transition: max-height .2s ease-out;
+  }
+    
+  .menu-icon {
+      cursor: pointer;
+      padding: 20px 20px;
+      position: relative;
+      float: left;
+      user-select: none;
+  }
+    
+  .menu-icon .navicon {
+      background: #333;
+      display: block;
+      height: 2px;
+      position: relative;
+      transition: background .2s ease-out;
+      width: 18px;
+  }
+    
+  .menu-icon .navicon:before,
+  .menu-icon .navicon:after {
+      background: #333;
+      content: '';
+      display: block;
+      height: 100%;
+      position: absolute;
+      transition: all .2s ease-out;
+      width: 100%;
+  }
+    
+  .menu-icon .navicon:before {
+      top: 5px;
+  }
+    
+  .menu-icon .navicon:after {
+      top: -5px;
+  }
+
+  .menu-btn {
+      display: none;
+  }
+    
+  .menu-btn:checked ~ .menu {
+        max-height: 240px;
+  }
+      
+  .menu-btn:checked ~ .menu-icon .navicon {
+          background: transparent;
+  }
+      
+  .menu-btn:checked ~ .menu-icon .navicon:before {
+        transform: rotate(-45deg);
+  }
+      
+  .menu-btn:checked ~ .menu-icon .navicon:after {
+        transform: rotate(45deg);
+  }
+      
+  .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+  .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+        top: 0;
+  }
+
+  .search {
+    width: 30px;
+    height: 30px;
+    display: none;
+  }
+
+  h1 {
+    text-align: center;
+    padding: 25px 0;
+    font-size: 26px;
+    margin: 0;
+    clear: both;
+  }
+
+}
+
+@media (min-width: 860px) {
+  .header {
+    background-image: url("../images/images/header.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+
+  .header .header-top {
+    @include desktop-container;
+    padding-top: 50px;
+  }
+
+  .header .logo {
+    width: 150px;
+  }
+
+  .header li {
+    float: left;
+  }
+
+  .header li a {
+    padding: 20px 30px;
+    font-size: 20px;
+  }
+
+  .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+
+  .header .menu-icon {
+    display: none;
+  }
+
+  .header .search {
+    display: block;
+    background-color: transparent;
+    border: none;
+    margin: 18.5px 0;
+  }
+
+  .header .search img {
+    width: 20px;
+    height: auto;
+  }
+
+  .header h1 {
+    padding: 325px 0;
+    text-align: center;
+    font-size: 70px;
+  }
+}
+
+

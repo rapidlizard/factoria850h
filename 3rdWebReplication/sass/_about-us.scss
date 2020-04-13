@@ -1,0 +1,119 @@
+.about-us {
+    color: $base-color-dark;
+    background: linear-gradient( rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85) ), url('../images/images/image.jpg');;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    @include mobile-container;
+
+    h2 {
+        margin: 0;
+        padding: 20px 0;
+        color: #d6d6d6;
+    }
+
+    h3 {
+        margin: 0;
+        padding: 20px 0;
+        color: #d6d6d6;
+    }
+
+    p {
+        margin: 0;
+        color: #c8c8c8;
+    }
+
+    ul {
+        margin: 0;
+        padding: 15px 0 30px;
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        li {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            h4 {
+                margin: 0;
+            }
+    
+            img {
+                width: 50px;
+                height: auto;
+                margin: 0 auto;
+            }
+        }
+    }
+
+    .about-us-img {
+        display: none;
+    }
+
+}
+
+@media (min-width: 860px) {
+    .about-us {
+        background: #131313;
+
+        h2 {
+            @include desktop-container;
+            font-size: 40px;
+            padding: 40px 0;
+            color: #4A4A4A;
+        }
+    
+        h3 {
+            margin: 0;
+            padding: 0 0 20px;
+            color: #777777;
+            font-size: 30px;
+        }
+    
+        p {
+            margin: 0;
+            font-size: 24px;
+            color: #4A4A4A;
+        }
+
+        .about-us-content {
+            @include desktop-container;
+            display: flex;
+            justify-content: space-between;
+            padding: 0 0 50px;
+            overflow: hidden;
+
+            ul {
+                height: 363px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                padding: 0;
+
+                li {
+                    display: block;
+
+                    h4 {
+                        font-size: 20px;
+                    }
+                }
+            }
+
+            .about-us-content-div {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                width: 330px;
+            }
+
+            .about-us-img {
+                padding-top: 9px;
+                display: block;
+                width: 600px;
+                height: 485px;
+            }
+        }
+    }
+}
